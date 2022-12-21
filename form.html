@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/c1e248ed67.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container2">
+        <div class="header">
+            <u><h2>REGISTRATION FORM</h2></u>~
+        </div>
+        <form class="form" id="form" action="result.html" method="GET">
+            <div class="control">
+                <label for="fname">Name</label>
+                <input type="text" name="" id="fname" placeholder="Enter your name" autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="control">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="" id="dob" placeholder="Enter your dob" autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="control">
+                <label for="phone">Contact Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone no." autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="control">
+                <label for="whatsapp">Whatsapp Number</label>
+                <input type="text" id="whatsapp" placeholder="Enter your whatsapp no." autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email id" autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="control">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" placeholder="Re-enter your password" autocomplete="off" required>
+                <i class="fas fa-circle-check"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Error message</span>
+            </div>
+            <div class="rdb">
+                <label for="rdbgender" required>Gender&nbsp&nbsp</label>
+                <input type="radio" name="rdbgender" id="rdbgm" value="M">Male&nbsp
+                <input type="radio" name="rdbgender" id="rdbgf" value="F">Female
+            </div>
+            <div class="lang">
+                <label for="chklang" required>Languages Known&nbsp&nbsp</label>
+                <input type="checkbox" name="chklang" id="chkc" value="c">C
+                <input type="checkbox" name="chklang" id="chkc+" value="c++">C++
+                <input type="checkbox" name="chklang" id="chkj" value="java">Java
+                <input type="checkbox" name="chklang" id="chkp" value="python">Python 
+            </div>
+            <div class="branch">
+            <label for="branch" required>Branch</label>
+            <select name="branch" id="branch">Branch
+                <option value="cse">CSE</option>
+                <option value="cs">CS</option>
+                <option value="cse(aiml)">CSE(AIML)</option>
+                <option value="cse(ds)">CSE(DS)</option>
+                <option value="aiml">AIML</option>
+                <option value="it">IT</option>
+                <option value="cs-it">CS-IT</option>
+                <option value="ece">ECE</option>
+                <option value="ee">EE</option>
+                <option value="me">ME</option>
+                <option value="civil">CIVIL</option>
+            </select><br><br>
+            </div>
+            <div class="interest">
+            <label for="interest" required>Interested Domain</label>
+            <select name="interest" id="interest">
+                <option value="webd">Web Development</option>
+                <option value="appd">App Development</option>
+                <option value="cp">Competitive Programming</option>
+                <option value="ml">Machine Learning</option>
+                <option value="design">UI/UX Designing</option>
+                <option value="blockchain">Blockchain</option>
+            </select>
+            </div>
+            <input type="submit" value="Submit" class="btn" id="submit" onclick="validate()">
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
