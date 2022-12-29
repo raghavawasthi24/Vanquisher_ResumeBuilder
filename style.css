@@ -1,297 +1,302 @@
-body{
-    font-family: italic;
+hr.new {
+	border-top: 1px dotted whitesmoke;
 }
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+.fa-fb {
+	color: #3b5998;
 }
-.sidebar{
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #042331;
-    transition: all .5s ease;
+.fa-tw {
+	color: #00acee;
 }
-.sidebar header{
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    line-height: 70px;
-    background: #063146;
-    user-select: none;
-}
-.sidebar ul a{
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    border-bottom: 1px solid black;
-    transition: .4s;
-}
-ul li:hover a{
-    padding-left: 50px;
-}
-.sidebar ul li a{
-    margin-right: 16px;
-}
-#check{
-    display: none;
-}
-label #btn, label #cancel{
-    position: absolute;
-    cursor: pointer;
-    background: #042331;
-    border-radius: 3px;
-}
-label #btn{
-    left: 40px;
-    top: 25px;
-    font-size: 35px;
-    color: white;
-    padding: 6px 12px; 
-    transition: all .5s;
-}
-label #cancel{
-    z-index: 1111;
-    left: -195px;
-    top: 17px;
-    font-size: 30px;
-    color: #0a5275;
-    padding: 4px 9px;
-    transition: all .5s ease;
-}
-#check:checked ~ .sidebar{
-    left: 0;
-}
-#check:checked ~ label #btn{
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-}
-#check:checked ~ label #cancel{
-    left: 195px;
-
-}
-.head{
-    text-align: center;
-    font-size : 30px;
-
+.fa-y {
+	color: #0e76a8;
 }
 
+.fa-ut {
+	color: #ff0000;
+}
 
+.logo {
+	color: white;
+	font-family: Magneto;
+	font-size: 30px;
+}
 
+.heading {
+	margin-top: 150px;
+	margin-right: 400px;
+	font-size: 80px;
+	font-weight: lighter;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
+.about {
+	color: teal;
+	font-family: cursive;
+	font-size: 40px;
+}
 
-* {
-    box-sizing: border-box;
-  }
-  
-  img {
-    vertical-align: middle;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+.welcome {
+	font-size: 50px;
+	font-weight: normal;
+}
 
+.about_text {
+	font-size: 20px;
+	line-height: 35px;
+}
 
+.about_img {
+	height: 200px;
+}
 
+.fs {
+	font-size: small;
+}
 
+.mist {
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: Mistral;
+	color: teal;
+	font-size: 40px;
+}
 
-:root{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    --myfont: sans-serif;
-    --my-btn-font: sans-serif;
-    --lg-lightcolor:linear-gradient(to left, rgba(116,235,213,0.6), rgba(159,172,230,0));
-    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+.col1 {
+	color: teal;
+	font-size: 20px;
 }
-body{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    width: 100%;
-    font-family: sans-serif;
-    overflow-x: hidden;
-}  
-.container2{
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px white;
-    overflow: hidden;
-    max-width: 100%;
-}
-.header{
-    background: var(--lg-color);
-    padding: 30px 0;
-}
-.header h2{
-    color:black;
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-.form{
-    padding: 40px;
 
+.col2 {
+	font-size: 20px;
+	color: sienna;
 }
-.control{
-    margin-bottom: 20px;
-    position: relative;
-}
-.rdb{
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-}
-.lang{
-    margin-bottom: 20px;
-}
-.control label{
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.control input{
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 12px;
-}
-.control input:focus{
-    outline: 0;
-    border-color: #9face6;
-    cursor: pointer;
-    background-color:rgb(208, 202, 214);
-}
-.control.success input{
-    border-color: rgb(24, 187, 24);
-}
-.control.error input{
-    border-color: red;
-}
-.control i{
-    position: absolute;
-    right: 8%;
-    top: 38px;
-    visibility: hidden;
-}
-.control.success i.fa-circle-check{
-    color: rgb(24, 155, 24);
-    visibility: visible;
-}
-.control.error i.fa-exclamation-circle{
-    color:rgb(218, 12, 12);
-    visibility: visible;
-}
-.control span{
-    color:rgb(206, 18, 18);
-    position:absolute;
-    font-size: 12px;
-    visibility: hidden;
-}
-.control.error span{
-    visibility: visible;
-}
-.form .btn{
-    background: var(--lg-color);
-    border: none;
-    cursor: pointer;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    width: 100%;
-    font-family: sans-serif;
-    padding: 15px 0;
-    margin-top: 20px;
 
+.rest {
+	color: teal;
+	font-family: Lucida Calligraphy;
+}
+
+.items {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: teal;
+}
+
+.teal {
+	color: teal;
+}
+
+.virat {
+	border-radius: 10px;
+}
+
+.cust {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 30px;
+}
+
+.say {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.cust_review {
+	line-height: 40px;
+}
+
+.facilities_item p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+
+.section_title {
+	margin-bottom: 75px;
+}
+
+.section_title h2 {
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 600;
+}
+
+.person {
+	color: teal;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: mistral;
+}
+
+.blog {
+	color: teal;
+	text-align: center;
+	font-size: 35px;
+	font-family: Lucida Calligraphy;
+	margin-bottom: 15px;
+}
+
+.blog_2 {
+	height: 90px;
+	width: 90px;
+	border-radius: 45px;
+	margin-left: 35px;
+	margin-top: 25px;
+}
+
+.blog_text {
+	font-family: Helvetica, sans-serif;
+	font-size: 25px;
+	color: teal;
+}
+
+.graph {
+	color: teal;
+	text-align: center;
+	font-size: 35px;
+	font-family: Lucida Calligraphy;
+	margin-bottom: 25px;
+}
+
+.bg_img {
+	height: 200px;
+	background-color: thistle;
+	background-image: url(Resources/1.jpg);
+	background-size: cover;
+}
+
+.btn_left {
+	color: white;
+	padding-top: 50px;
+}
+
+.pad {
+	padding-top: 10px;
+}
+
+.icon {
+	height: 45px;
+}
+
+.fo {
+	font-size: 15px;
+}
+
+.bg_img1 {
+	background-image: url(Resources/footer-bg.jpg);
+	color: grey;
+	height: 350px;
+	padding-top: 50px;
+	border-radius: 10px;
+	background-size: cover;
+	width: auto;
+}
+
+.section_title p {
+	font-size: 14px;
+	line-height: 30px;
+	color: #777777;
+	margin-bottom: 0px;
+}
+
+.title_color {
+	color: #222222;
+}
+
+.title_w {
+	color: #fff;
+	font-size: 35px;
+}
+
+.title {
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 600;
+}
+
+.main_logo {
+	font-family: Magneto;
+	color: teal;
+	font-size: 30px;
+}
+
+.ph {
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.input {
+	border-radius: 20px;
+	background-color: rgb(73, 66, 66);
+	width: 300px;
+	border: rgb(65, 62, 62);
+}
+
+.navl {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	margin-left: 20px;
+}
+
+.facilities_area {
+	position: relative;
+	z-index: 1;
+	background: #04091e;
+	overflow: hidden;
+}
+
+.facilities_area .bg-parallax {
+	background: url("Resources/n1.jfif") no-repeat scroll center 0/cover;
+	opacity: 0.15;
+}
+
+.section_gap {
+	padding: 120px 0;
+}
+
+.sec_h4 {
+	font-size: 18px;
+	line-height: 38px;
+	font-weight: 600;
+	color: #222222;
+	margin-bottom: 0px;
+}
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 125%;
+	bottom: 0;
+	z-index: -1;
+}
+
+.facilities_item {
+	border: 1px solid #777777;
+	border-radius: 10px;
+	background-color: rgba(249, 249, 255, 0.102);
+	padding: 31px 40px 37px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.facilities_item .sec_h4 {
+	padding-bottom: 18px;
+	color: #fff;
+}
+
+.facilities_item .sec_h4 i {
+	color: yellow;
+	font-size: 24px;
+	line-height: 38px;
+	display: inline-block;
+	vertical-align: bottom;
+	padding-right: 20px;
+}
+
+.names {
+	font-family: cursive;
+	color: blanchedalmond;
 }
