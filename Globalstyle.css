@@ -1,0 +1,48 @@
+*{
+    padding: 10;
+    margin: 10;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    box-sizing: border-box;
+    max-width: 100vw;
+    z-index: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#secretary{
+    display: flex;
+    padding: 15vh 4px 4px 0;
+    width: 100vw;
+    background-color: white;  
+    color: black;
+    background-image: url("");
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+
+
+#Achievements{
+    display: flex;
+    padding-top: 20vh;
+    background-image: url("");
+    background-size: 10vh;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sample{
+    padding-left: 10vh;
+}
