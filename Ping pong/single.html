@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping pong</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+</style>
+<body>
+    <div id="can">
+        <canvas id="myGame" width="400" height="600" ></canvas>
+    </div>
+
+
+    <div id="result">
+        <h1 id="win">Game over</h1>
+        <button id="btn" onclick="location.reload()">Restart</button>
+    </div>
+    
+
+    <script src="single.js"></script>
+</body>
+</html>
