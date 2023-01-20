@@ -34,6 +34,7 @@ from .utils import Util
 from django.utils.translation import gettext_lazy 
 from django.contrib.auth import login,logout
 from django.contrib import auth 
+import os
 
 class RegisterView(generics.GenericAPIView):
 
