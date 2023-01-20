@@ -26,7 +26,24 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account',
+    'corsheaders',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+    'drf_yasg',
+    'rest_framework_recaptcha',
 ]
+SWAGGER_SETTINGS={
+    'SECURITY_DEFINITIONS':{
+        'Bearer':{
+            'type':'apiKey',
+            'name':'Authorization',
+            'in':'header'
+        }
+    }
+}
+AUTH_USER_MODEL='account.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -64,19 +81,23 @@ WSGI_APPLICATION = 'ResumeB.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-=======
-         'ENGINE': 'django.db.backends.postgresql_psycopg2',
->>>>>>> 6348efee495c6fc03580a38076cd22421a4ff298
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': '2hiYOEvnXc5JfNBswLvL',
         'HOST': 'containers-us-west-136.railway.app',
         'PORT': '7393',
-<<<<<<< HEAD
 
     }
+}
+REST_FRAMEWORK = {
+    
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        # 'knox.auth.TokenAuthentication'
+    ),
+  
 }
 
 
@@ -91,8 +112,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-=======
->>>>>>> 6348efee495c6fc03580a38076cd22421a4ff298
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
@@ -106,7 +125,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -122,3 +141,34 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=2),
+   
+
+
+
+    'AUTH_HEADER_TYPES': ('Bearer',),
+    'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
+    'USER_ID_FIELD': 'id',
+    'USER_ID_CLAIM': 'user_id',
+    'USER_AUTHENTICATION_RULE': 'rest_framework_simplejwt.authentication.default_user_authentication_rule',
+
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+    'TOKEN_TYPE_CLAIM': 'token_type',
+    'TOKEN_USER_CLASS': 'rest_framework_simplejwt.models.TokenUser',
+
+    'JTI_CLAIM': 'jti',
+
+    'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',
+    'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
+    'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
+}
+
+
+CORS_ORIGIN_ALLOW_ALL=True
+EMAIL_USE_TLS=True
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER='drapitest312@gmail.com'#add you email here
+EMAIL_HOST_PASSWORD='dkxbxlexjtrsevfz'#add app password
