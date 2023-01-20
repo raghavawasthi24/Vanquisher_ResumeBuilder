@@ -64,12 +64,17 @@ WSGI_APPLICATION = 'ResumeB.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+=======
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+>>>>>>> 6348efee495c6fc03580a38076cd22421a4ff298
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': '2hiYOEvnXc5JfNBswLvL',
         'HOST': 'containers-us-west-136.railway.app',
         'PORT': '7393',
+<<<<<<< HEAD
 
     }
 }
@@ -86,6 +91,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
+=======
+>>>>>>> 6348efee495c6fc03580a38076cd22421a4ff298
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
