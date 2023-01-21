@@ -12,6 +12,13 @@ Live resume editor.
 - Choose from a variety if template
 - User Friendly and easy Creation of Resume
 
+## Future Scope
+
+- User Can easily update the resume
+- Resume Based Company Short Listing
+- Choose from a variety if template
+- User Friendly and easy Creation of Resume
+
 
 ## Tech Stack 🖥️
 
