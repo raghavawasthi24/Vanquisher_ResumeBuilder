@@ -40,9 +40,13 @@ Live resume editor.
 
 - Table of Database 
 ![WhatsApp Image 2023-01-21 at 2 02 27 PM](https://user-images.githubusercontent.com/97653340/213859037-49f09250-0f24-421a-a556-578706c99f70.jpeg)
+##Admin Page
+![Screenshot (109)](https://user-images.githubusercontent.com/104566386/213868865-cb3b6ef4-bc90-4cba-91b9-58b9fed4ad0f.png)
+
 
 
 ## Deployment
+
 
 
  Deployed on Netlify-
