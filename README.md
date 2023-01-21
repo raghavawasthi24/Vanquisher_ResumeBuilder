@@ -46,7 +46,7 @@ Live resume editor.
 
 
  Deployed on Netlify-
- [Netlify Link](https://quiet-alfajores-9e694f.netlify.app/)
+ [Netlify Link](https://fluffy-gecko-7731ee.netlify.app/main)
 
 
 ## API Links 🔗
