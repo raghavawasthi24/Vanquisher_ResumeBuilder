@@ -1,32 +1,67 @@
-# ResumeGen
+![main-removebg-preview](https://user-images.githubusercontent.com/97653340/213859431-eb9a28a5-6d39-4d92-87f7-a25143c4cb6a.jpg)
+
 ReactJS Basic Resume Generator which will generate customized Resume in few minutes on your requirements.
 Live resume editor.
 
-[Visit Now](https://resumegenx.netlify.app/) 🚀
+## Features
+- User Can easily update the resume
+- Resume Based Compaby Short Listing
+- Choose from a variety if template
+- User Friendly and easy Creation of Resume
 
-## 🖥️ Tech Stack
+## Future Scope
+- Based on the data entered build a Portfolio Website
+- Add More Template
+- Add a AI voice assistant with alan AI for Blind and Handicapped People
+- Suggestion on improving Resume and Rating them.
 
+## Tech Stack 🖥️
+**Client:** 
 ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
 ![chakraui](https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white)&nbsp;
+**Server:**
+![django](https://img.shields.io/badge/Django-DjangoRest%20FrameWork-green)
+![SQL](https://img.shields.io/badge/SQL-Postgresql-green)
 
-Extras: React-To-Print
+## Screenshots
+![Screenshot (23)](https://user-images.githubusercontent.com/104566386/213869495-9b94e018-fc0b-42ee-88b8-97e4d118877f.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/104566386/213869534-dabb74d0-e44b-4818-af0a-a4dc74910aa7.png)
+![WhatsApp Image 2023-01-21 at 1 33 40 PM](https://user-images.githubusercontent.com/97653340/213857450-126b556e-c461-48d6-9e75-e911a34e6b97.jpeg)
+![Screenshot (25)](https://user-images.githubusercontent.com/104566386/213869972-9dc28e4c-a5c8-4aa6-9ecd-ec7f2e33afdc.png)
+![WhatsApp Image 2023-01-21 at 1 33 40 PM-2](https://user-images.githubusercontent.com/97653340/213858205-c954f067-1468-450b-ab21-163f4c628286.jpeg)
+- Table of Database 
 
-**Deployed On:**
+![WhatsApp Image 2023-01-21 at 2 02 27 PM](https://user-images.githubusercontent.com/97653340/213859037-49f09250-0f24-421a-a556-578706c99f70.jpeg)
 
-![netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+- Admin Page
 
-## Sneak  Peek of Home Page 🙈 :
-![screencapture-resumegenx-netlify-app-2022-01-18-16_24_49](https://user-images.githubusercontent.com/64949957/159115311-42275489-8fbe-4d80-9f7c-4d308d9287ce.png)
-![smartmockups_kyk0u3hp](https://user-images.githubusercontent.com/64949957/159115313-ae8bf72c-2a79-425d-8520-32b6ba3e0fcf.jpg)
+![Screenshot (109)](https://user-images.githubusercontent.com/104566386/213868865-cb3b6ef4-bc90-4cba-91b9-58b9fed4ad0f.png)
 
-
-<h2>📬 Contact</h2>
-
-If you want to contact me, you can reach me through below handles.
-
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jigar-sable)
-
-© 2022 Jigar Sable
+## Deployment
+ Deployed on Netlify-
+ [Netlify Link](https://fluffy-gecko-7731ee.netlify.app)
+ [Netlify Link](https://carrersome.netlify.app/)
 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+## API Links 🔗
+- Authentication APIs
+
+  [Login](https://web-production-5470.up.railway.app/accounts/login/)
+  
+  [Register](https://web-production-5470.up.railway.app/accounts/register/)
+  
+- OfferAJob API last two Parameters of URL are user id and job title of user Respectively
+ 
+  [OfferAJob](https://web-production-5470.up.railway.app/info_details/company_user/1/Backend%20Developer)
+  
+- User Data APIs and Last Parameters are UserIDs
+
+  [ProjectsOfuser](https://web-production-5470.up.railway.app/info_details/project/1)
+  
+  [Skillsofuser](https://web-production-5470.up.railway.app/info_details/skill/1)
+  
+  [Eductaionofuser](https://web-production-5470.up.railway.app/info_details/education/1)
+  
+  [AboutofUser](https://web-production-5470.up.railway.app/info_details/about/1)
+  
+  [WorkexpofUser](https://web-production-5470.up.railway.app/info_details/work/1)
