@@ -8,7 +8,7 @@ Live resume editor.
 ## Features
 
 - User Can easily update the resume
-- Resume Based Compaby Short Listing
+- Resume Based Company Short Listing
 - Choose from a variety if template
 - User Friendly and easy Creation of Resume
 
