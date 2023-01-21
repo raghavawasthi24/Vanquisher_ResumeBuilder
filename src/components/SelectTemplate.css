@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+.selectTemplate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/10068.jpg");
+    background-size: cover;
+}
+.selectTemplate h5{
+    font-size: 3rem;
+    margin: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.hide{
+    display: none;
+}
+.templates{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.templates p{
+    background-color: purple;
+}
+
+.template1{
+    width:20rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("C:\Users\ragha\OneDrive\Documents\Resume\resumegen\src\images\template1.png");
+    background-size: cover;
+    /* border: 1px solid skyblue; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.template2{
+    width:20rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("C:\Users\ragha\OneDrive\Documents\Resume\resumegen\src\images\template2.png");
+    background-size: cover;
+    /* border: 1px solid skyblue; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}

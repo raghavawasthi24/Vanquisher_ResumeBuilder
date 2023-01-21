@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #eff2f9;
+    display: flex;
+    justify-content: flex-end;
+}
+.loginpage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 1rem;
+}
+.loginpage p{
+    margin-right: 1rem;
+}
+.logout{
+    margin-right: 1rem;
+}
+.nav-btn{
+    color: white !important; 
+    margin: 0.5rem 0.3rem;
+    background-color:#0165E1  !important;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+}

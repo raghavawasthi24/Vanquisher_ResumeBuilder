@@ -1,0 +1,20 @@
+.Main-FAQ{
+  
+    width: 50%;
+    margin: 2rem auto;
+
+}
+.accordian-button{
+    /* font-size: 0.5rem; */
+}
+.accordian{
+    padding: 0rem 5rem;
+    font-size: 1.5rem;
+}
+.Main-FAQ button{
+    font-size: 2rem;
+}
+.faqhead{
+    font-size: 3rem;
+    font-weight: 600;
+}

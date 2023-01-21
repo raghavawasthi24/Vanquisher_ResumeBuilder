@@ -1,0 +1,54 @@
+.offer{
+    margin:2rem 9rem;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+.offer-card{
+    display: grid;
+    justify-content: center;
+    background-color: #0165E1;
+    width:20rem ;
+    border-radius: 10px 0px 0px 10px;
+
+}
+.offer-head{
+    padding: 1rem;
+    font-size: 2.5rem ;
+    font-weight: 500;
+}
+.offer-input{
+  border: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.offer{
+    display: flex;
+}
+
+.offer-img{
+    border-radius: 0px 5px 5px 0px;
+    padding: 4rem 0rem;
+    background-color: antiquewhite;
+    margin: 0rem 0rem;
+    height: 34.25rem;
+    width: 38rem;
+}
+.offerimg{
+    
+    margin: -3rem 5rem ;
+    height: 30rem;
+    width: 30rem;
+}
+.label{
+    padding-bottom: 0rem;
+    margin-left: 1rem;
+}
+.post{
+    background-color: white;
+border-radius: 5px;
+border: none;
+margin: 1rem 4rem;
+width: 8rem;
+padding: 0.5rem;
+}
