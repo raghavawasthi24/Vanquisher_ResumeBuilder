@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import About,Project,Education,Skill,Work,Company
+from .models import About,Project,Education,Skill,Work,Company_User
 from account.models import User
 
 class AboutSerializer(serializers.ModelSerializer):
@@ -25,6 +25,5 @@ class WorkSerializer(serializers.ModelSerializer):
         fields="__all__"
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
-        model=Company
+        model=Company_User
         fields="__all__"
-
