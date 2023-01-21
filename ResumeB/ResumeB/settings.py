@@ -171,5 +171,5 @@ CORS_ORIGIN_ALLOW_ALL=True
 EMAIL_USE_TLS=True
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER='drapitest312@gmail.com'#add you email here
-EMAIL_HOST_PASSWORD='dkxbxlexjtrsevfz'#add app password
+EMAIL_HOST_USER=#add you email here
+EMAIL_HOST_PASSWORD=#add app password
