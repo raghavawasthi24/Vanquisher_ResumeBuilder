@@ -29,10 +29,10 @@ Live resume editor.
 ![SQL](https://img.shields.io/badge/SQL-Postgresql-green)
 
 ## Screenshots
+![Screenshot (23)](https://user-images.githubusercontent.com/104566386/213869495-9b94e018-fc0b-42ee-88b8-97e4d118877f.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/104566386/213869534-dabb74d0-e44b-4818-af0a-a4dc74910aa7.png)
 
-![WhatsApp Image 2023-01-21 at 1 48 30 PM](https://user-images.githubusercontent.com/97653340/213858860-81f71abb-a0bf-472e-bce1-ca8728cf44d7.jpeg)
 
-![WhatsApp Image 2023-01-21 at 1 48 31 PM](https://user-images.githubusercontent.com/97653340/213858870-3599d965-4b8a-4f78-874c-517cd8e34ff2.jpeg)
 
 ![WhatsApp Image 2023-01-21 at 1 33 40 PM](https://user-images.githubusercontent.com/97653340/213857450-126b556e-c461-48d6-9e75-e911a34e6b97.jpeg)
 
