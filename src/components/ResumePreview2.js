@@ -35,9 +35,10 @@ const ResumePreview2 = () => {
                     <p>LinkedIn</p>
                 </div>
                 <div className='skills2'>
-                <Heading as="h5" size="md" color={"gray.700"}>
-                          SKILLS
+                <Heading as="h5" size="md" color={"gray.000"}>
+                          SKILLS       
                         </Heading>
+                        <hr/>
                     {/* <p>asdfg</p>
                     <p>asdfg</p>
                     <p>asdfg</p>

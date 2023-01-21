@@ -62,46 +62,7 @@ export const ResumeProvider = ({ children }) => {
             id: 7,
             name: ".Net",
         },
-        {
-            id: 8,
-            name: "Java",
-        },
-        {
-            id: 9,
-            name: "RestAPI",
-        },
-        {
-            id: 10,
-            name: "jQuery",
-        },
-        {
-            id: 11,
-            name: "MySQL",
-        },
-        {
-            id: 12,
-            name: "Ajax",
-        },
-        {
-            id: 13,
-            name: "GitHub",
-        },
-        {
-            id: 14,
-            name: "HTML",
-        },
-        {
-            id: 15,
-            name: "CSS",
-        },
-        {
-            id: 16,
-            name: "TailwindCSS",
-        },
-        {
-            id: 17,
-            name: "Bootstrap",
-        },
+       
     ]);
 
     const [workList, setWorkList] = useState([

@@ -1,0 +1,44 @@
+.selectTemplate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selectTemplate h5{
+    font-size: 2rem;
+}
+
+.hide{
+    display: none;
+}
+.templates{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.templates p{
+    background-color: purple;
+}
+
+.template1{
+    width:20rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("C:\Users\ragha\OneDrive\Documents\Resume\resumegen\src\images\template1.png");
+    background-size: cover;
+    border: 1px solid skyblue;
+}
+
+.template2{
+    width:20rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("C:\Users\ragha\OneDrive\Documents\Resume\resumegen\src\images\template2.png");
+    background-size: cover;
+    border: 1px solid skyblue;
+}

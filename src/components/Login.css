@@ -1,0 +1,102 @@
+.login{
+    
+    /* background-image: url("./images/bg.jpg"); */
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginControls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius: 5px;
+}
+.login h1{
+    color:#4054B2;
+    font-size: 3rem;
+    margin:1rem 0 0 0;
+}
+.loginPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20rem;
+    height: auto;
+    padding: 1rem 1rem;
+    
+}
+.loginPage input{
+    width:95%;
+    padding: 0.7rem 0.5rem;
+    border:0.5px solid grey;
+    outline:none;
+    margin:0.2rem;
+    border-radius: 5px;
+}
+.logInsubmit{
+    color:white;
+    background-color: #4054B2;
+    border:none;
+    outline:none;
+}
+.loginerror{
+    color:red;
+    font-size: 0.8rem;
+    display: flex;
+    align-self: flex-start;
+}
+.register{
+    width: 50%;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    color:white;
+    background-color: #42b72a;
+    border:none;
+    outline:none;
+    margin:1rem 0
+}
+.forgetPassword{
+    text-decoration: none;
+    color:red;
+    margin:1rem;
+    font-weight: 500;
+}
+.successfulLogin{
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color:red; */
+    z-index: 99;
+    overflow: hidden;
+}
+.successfulLogin p{
+    display: flex;
+    background-color: red;
+    color: white;
+    padding:1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    z-index: 99;
+}
+@media screen and (max-width:401px){
+    .loginPage{
+        width:17rem;
+    }
+}
+@media screen and (max-width:334px){
+    .loginPage{
+        width:15rem;
+    }
+}

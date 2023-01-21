@@ -1,0 +1,139 @@
+.registerUser{
+    width:100vw;
+    height: auto;
+    /* background-color:#f0f2f5; */
+    /* background-image: url("./images/bg2.jpg"); */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.registerUser h1{
+    color:#4054B2;
+    font-size: 3rem;
+    margin:1rem 1rem 0 1rem;
+}
+.registerControl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    /* background-color:#f0f2f5; */
+    border-radius: 5px;
+    position: relative;
+    margin:1rem;
+}
+.registerPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20rem;
+    height: auto;
+    padding: 1.5rem 1rem;
+}
+.inputfield{
+    width:95%;
+    padding: 0.7rem 0.5rem;
+    border:0.5px solid grey;
+    outline:none;
+    margin:0.2rem;
+    border-radius: 5px;
+}
+.genderControl{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.genderCategory{
+    width:auto;
+    display: flex;
+}
+.genderCategory input{
+    margin:5px;
+    padding:5px;
+}
+#gender{
+    display: flex;
+    align-self: flex-start;
+    margin: 0.4rem;
+    
+}
+.registererror{
+    color:red;
+    font-size: 0.8rem;
+    display: flex;
+    align-self: flex-start;
+    margin-left:0.3rem;
+}
+.registerbtn{
+    background-color: #4054B2;
+    color:white;
+}
+.loginback{
+    width: 50%;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    color:white;
+    background-color: #42b72a;
+    border:none;
+    outline:none;
+    margin:1rem 0
+}
+.confirmRegister{
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+}
+.register-confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 4rem;
+}
+.confirmRegister p{
+    display: flex;
+    color: black;
+    /* padding:1rem; */
+    font-size: 1rem;
+    font-weight: 450;
+    z-index: 99;
+}
+.confirmRegister button{
+    margin:0.7rem 0.5rem;
+    background-color: #4054B2;
+    border:none;
+    outline: none;
+    color:white;
+    padding:0.5rem;
+    border-radius: 5px;
+}
+@media screen and (max-width:401px){
+    .registerPage{
+        width:17rem;
+    }
+}
+@media screen and (max-width:334px){
+    .registerPage{
+        width:15rem;
+    }
+}
+.loading{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

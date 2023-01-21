@@ -5,6 +5,10 @@ import Header from './components/Layouts/Header';
 import Navbar from './components/Layouts/Navbar';
 import Footer from './components/Layouts/Footer';
 import Main from './components/Main';
+import Login from './components/Login';
+import Register from './components/Register';
+import { Route,Routes } from 'react-router-dom';
+import SelectTemplate from './components/SelectTemplate';
 import WebFont from 'webfontloader';
 
 function App() {
@@ -22,7 +26,14 @@ function App() {
       <ResumeProvider>
         {/* <Navbar /> */}
         {/* <Header /> */}
-        <Main />
+        <Routes>
+         <Route path="/" element={<Login/>}/>
+         <Route path="/register" element={<Register/>}/>
+          <Route path="/main" element={<Main/>}/>
+          <Route path="/selectTemplate" element={<SelectTemplate/>}/>
+        </Routes>
+        
+        
         {/* <Footer /> */}
       </ResumeProvider>
     </>
