@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-!b9d@8t65w52)b)yt@e8c0x3navak_-v+_i^d@2yfa&sx(qnpv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["web-production-5470.up.railway.app"]
 
 
 # Application definition
@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account',
+    'info_details',
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
@@ -84,9 +85,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '2hiYOEvnXc5JfNBswLvL',
-        'HOST': 'containers-us-west-136.railway.app',
-        'PORT': '7393',
+        'PASSWORD': 'Tu28dRcR6s2KN2tdxDdS',
+        'HOST': 'containers-us-west-118.railway.app',
+        'PORT': '7000',
 
     }
 }
