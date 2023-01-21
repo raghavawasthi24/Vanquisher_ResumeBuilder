@@ -34,9 +34,11 @@ class Work(models.Model):
     start_date=ArrayField(models.DateField(blank=True))
     end_date=ArrayField(models.DateField(blank=True))
     description = ArrayField(models.TextField(max_length=500), blank=True)
-class Company(models.Model):
-    company_name = models.CharField(max_length=200, blank=True)
-    email=models.EmailField(unique=True, blank=True)
-    position = ArrayField(models.CharField(max_length=200), blank=False)
-    skills =ArrayField(models.CharField(max_length=20), blank=False)
+class Company_User(models.Model):  
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    company_name=models.CharField(max_length=100)
+    employment_type= models.CharField(max_length=50)
+    description = models.TextField(max_length=500)
+    email=models.EmailField(unique=False)
+
 
