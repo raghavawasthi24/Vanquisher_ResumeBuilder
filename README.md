@@ -14,10 +14,8 @@ Live resume editor.
 
 ## Future Scope
 
-- User Can easily update the resume
-- Resume Based Company Short Listing
-- Choose from a variety if template
-- User Friendly and easy Creation of Resume
+- AI based Voice Assistant that eases the process of resume making
+- Rate your Resume and based on that provide some recommandations
 
 
 ## Tech Stack 🖥️
