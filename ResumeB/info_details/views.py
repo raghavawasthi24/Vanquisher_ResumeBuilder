@@ -10,7 +10,7 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi 
 from rest_framework.generics import ListCreateAPIView
 from .serializers import AboutSerializer,ProjectSerializer,SkillSerializer,WorkSerializer,EducationSerializer,CompanySerializer
-from .models import About,Project,Skill,Work,Education,Company
+from .models import About,Project,Skill,Work,Education,Company_User
 from django.conf import settings
 from django.utils.translation import gettext_lazy 
 import json 
@@ -58,9 +58,9 @@ def project_view(request,pk):
     project=Project.objects.get(id=pk)
     try:
         data=JSONParser().parse(request)
-        serializer=AboutSerializer(project,data=data)
+        serializer=ProjectSerializer(project,data=data)
     except:
-        serializer=AboutSerializer(data=request.data)
+        serializer=ProjectSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data,status=status.HTTP_201_CREATED)
@@ -80,9 +80,9 @@ def skill_view(request,pk):
     skill=Skill.objects.get(id=pk)
     try:
         data=JSONParser().parse(request)
-        serializer=AboutSerializer(skill,data=data)
+        serializer=SkillSerializer(skill,data=data)
     except:
-        serializer=AboutSerializer(data=request.data)
+        serializer=SkillSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data,status=status.HTTP_201_CREATED)
@@ -102,14 +102,14 @@ def work_view(request,pk):
     work=Work.objects.get(id=pk)
     try:
         data=JSONParser().parse(request)
-        serializer=AboutSerializer(work,data=data)
+        serializer=WorkSerializer(work,data=data)
     except:
-        serializer=AboutSerializer(data=request.data)
+        serializer=WorkSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data,status=status.HTTP_201_CREATED)
 class EducationView(ListCreateAPIView):
-    serializer_class=EducationSerializer
+    serializer_class=ProjectSerializer
     queryset=Education.objects.all()
     def perform_create(self,serializer):
         pk=self.kwargs.get("pk")
@@ -124,42 +124,48 @@ def education_view(request,pk):
     education=Education.objects.get(id=pk)
     try:
         data=JSONParser().parse(request)
-        serializer=AboutSerializer(education,data=data)
+        serializer=EducationSerializer(education,data=data)
     except:
-        serializer=AboutSerializer(data=request.data)
+        serializer=EducationSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data,status=status.HTTP_201_CREATED)
 class CompanyView(ListCreateAPIView):
     serializer_class=CompanySerializer
-    queryset= Company.objects.all()
+    queryset=Company_User.objects.all()
     def perform_create(self,serializer):
         pk=self.kwargs.get("pk")
-        user= User.objects.get(id=pk)
+        employment=self.kwargs.get("employment")
+        user=User.objects.get(id=pk)
+        user_email=About.objects.filter(role=employment)
+        email_of_all=[]
+        users_all=[]
+        for users in user_email:
+            users_all.append(users)
+            email_of_all.append(users.email)
+        for user_email in users_all:
+            email_body = 'Hi '+user.full_name + \
+            '\nThis candidate is elligible for the job offred by you.\nDetails of User:\n'+\
+                'Name:'+user_email.full_name+'\nPhone_number:'+user_email.mobile_number+'\nEmail:\n'+user_email.email
+            data = {'email_body': email_body, 'to_email': user.email,
+                'email_subject': 'Ride has been booked'}
+
+            Util.send_email(data)
+        print(email_of_all)
         serializer.save(user=user)
     def get_queryset(self):
         pk=self.kwargs.get("pk")
-        user= User.objects.get(id=pk)
+        user=User.objects.get(id=pk)
         return self.queryset.filter(user=user)
+@api_view(['PUT'])
+def company_view(request,pk):
+    company=Company_User.objects.get(id=pk)
+    try:
+        data=JSONParser().parse(request)
+        serializer=CompanySerializer(company,data=data)
+    except:
+        serializer=CompanySerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data,status=status.HTTP_201_CREATED)
 
-    @api_view(['GET'])
-    def showcompany(request,pos,sk):
-        userpos= Work.objects.get(position=pos)
-        usersk= Skill.objects.get(skills=sk)
-        companies= Company.objects.filter(position=userpos, skills=usersk)
-        if companies:
-            for company in companies:
-                print(company.company_name)
-                profile=User.objects.get(id=pk)
-                email_body = 'Greetings!'+company.company_name + \
-                '\njob opportunities offered by you for'+company.positon+' position and having'+company.skills+ ' skills matches to my resume. So, I can be a perfect employee for this job and this will be my dream job '+'\nMy Contact Details :'+\
-                '\nName:'+profile.full_name+'\nPhone Number:'+profile.mobile_number+'\nEmail:'+profile.email
-                data = {'email_body': email_body, 'to_email': company.email}
-
-                Util.send_email(data)
-        else:
-            return Response({"Error":"No Ride is available for this route"},status=status.HTTP_400_BAD_REQUEST)
-
-
-
-       
