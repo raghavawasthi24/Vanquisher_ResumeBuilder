@@ -8,14 +8,15 @@ Live resume editor.
 ## Features
 
 - User Can easily update the resume
-- Resume Based Company Short Listing
+- Resume Based Compaby Short Listing
 - Choose from a variety if template
 - User Friendly and easy Creation of Resume
 
 ## Future Scope
-
-- AI based Voice Assistant that eases the process of resume making
-- Rate your Resume and based on that provide some recommandations
+- Based on the data entered build a Portfolio Website
+- Add More Template
+- Add a AI voice assistant with alan AI for Blind and Handicapped People
+- Suggestion on improving Resume and Rating them.
 
 
 ## Tech Stack 🖥️
@@ -45,32 +46,32 @@ Live resume editor.
 
 
  Deployed on Netlify-
- [Netlify Link](https://)
+ [Netlify Link](https://quiet-alfajores-9e694f.netlify.app/)
 
 
 ## API Links 🔗
 
 - Authentication APIs
 
-  [Login](https://web-production-5470.up.railway.app/accounts/login/);
+  [Login](https://web-production-5470.up.railway.app/accounts/login/)
 
-  [Register](https://web-production-5470.up.railway.app/accounts/register/);
+  [Register](https://web-production-5470.up.railway.app/accounts/register/)
 
 - OfferAJob API last two Parameters of URL are user id and job title of user Respectively
  
-  [OfferAJob](https://web-production-5470.up.railway.app/info_details/company_user/1/Backend%20Developer);
+  [OfferAJob](https://web-production-5470.up.railway.app/info_details/company_user/1/Backend%20Developer)
 
 - User Data APIs and Last Parameters are UserIDs
 
-  [ProjectsOfuser](https://web-production-5470.up.railway.app/info_details/project/1);
+  [ProjectsOfuser](https://web-production-5470.up.railway.app/info_details/project/1)
 
-  [Skillsofuser](https://web-production-5470.up.railway.app/info_details/skill/1);
+  [Skillsofuser](https://web-production-5470.up.railway.app/info_details/skill/1)
 
-  [Eductaionofuser](https://web-production-5470.up.railway.app/info_details/education/1);
+  [Eductaionofuser](https://web-production-5470.up.railway.app/info_details/education/1)
 
-  [AboutofUser](https://web-production-5470.up.railway.app/info_details/about/1);
+  [AboutofUser](https://web-production-5470.up.railway.app/info_details/about/1)
 
-  [WorkexpofUser](https://web-production-5470.up.railway.app/info_details/work/1);
+  [WorkexpofUser](https://web-production-5470.up.railway.app/info_details/work/1)
 
 
 
