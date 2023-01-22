@@ -39,7 +39,6 @@ Live resume editor.
 
 ## Deployment
  Deployed on Netlify-
- [Netlify Link](https://fluffy-gecko-7731ee.netlify.app)
  [Netlify Link](https://carrersome.netlify.app/)
 
 
